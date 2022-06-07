@@ -19,7 +19,11 @@ osascript \
 -e 'tell application "System Events" to tell process "iTerm" to key code 52' \
 -e 'tell application "System Events" to tell process "iTerm" to keystroke "awslocal cloudformation deploy --stack-name mystack --template-file local-cf.yml"' \
 -e 'tell application "System Events" to tell process "iTerm" to key code 52' \
--e 'tell application "System Events" to tell process "iTerm" to keystroke "open http://127.0.0.1:8000/docs"' \
+-e 'tell application "System Events" to tell process "iTerm" to keystroke "awslocal sns list-topics"' \
+-e 'tell application "System Events" to tell process "iTerm" to key code 52' \
+-e 'tell application "System Events" to tell process "iTerm" to keystroke "awslocal sqs list-queues"' \
+-e 'tell application "System Events" to tell process "iTerm" to key code 52' \
+-e 'tell application "System Events" to tell process "iTerm" to keystroke "awslocal s3 ls"' \
 -e 'tell application "System Events" to tell process "iTerm" to key code 52' \
 -e 'tell application "System Events" to tell process "iTerm" to keystroke "exit"' \
 -e 'tell application "System Events" to tell process "iTerm" to key code 52'
